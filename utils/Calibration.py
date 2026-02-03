@@ -1,6 +1,10 @@
 import json
 from pathlib import Path
 
+class MissingMetricsError(Exception):
+    """Custom exception for missing metrics errors."""
+    pass
+
 def calibrate_metrics(cta: dict, cta2vta: dict, pfx: str) -> dict:
     """
     Multiply metrics by the slope from Calibrations.json.
@@ -36,19 +40,33 @@ def calibrate_slide_metrics(metrics_path: str, calibrations_path: str, output_pa
     with open(metrics_path, 'r') as f:
         data = json.load(f)
 
+    metrics = data.get('metrics')
+    if metrics is None:
+        raise MissingMetricsError("Missing top-level 'metrics' key")
+
+    missing = [
+        k for k in ('weighted_by_rois', 'unweighted_global')
+        if k not in metrics
+    ]
+
+    if missing:
+        raise MissingMetricsError(
+            f"Missing required metric group(s): {', '.join(missing)}"
+        )
+
     # Load calibration slopes
     with open(calibrations_path, 'r') as f:
         cta2vta = json.load(f)
 
     # Calibrate weighted metrics
-    weighted = data['metrics'].get('weighted_by_rois', {})
+    weighted = metrics['weighted_by_rois']
     weighted_cal = calibrate_metrics(weighted, cta2vta, pfx='CTA.SaliencyWtdMean_')
-    data['metrics']['weighted_by_rois'].update(weighted_cal)
+    metrics['weighted_by_rois'].update(weighted_cal)
 
     # Calibrate unweighted metrics
-    unweighted = data['metrics'].get('unweighted_global', {})
+    unweighted = metrics['unweighted_global']
     unweighted_cal = calibrate_metrics(unweighted, cta2vta, pfx='CTA.Global_')
-    data['metrics']['unweighted_global'].update(unweighted_cal)
+    metrics['unweighted_global'].update(unweighted_cal)
 
     # Save calibrated JSON
     with open(output_path, 'w') as f:
@@ -64,13 +82,30 @@ if __name__ == "__main__":
     results_files = list(Path(metrics_json_path).rglob("*.json"))
     results_files = [f for f in results_files if "roiMeta" not in str(f.parent)]
 
+    skipped = []
+
     for results_file in results_files:
         print(f"Processing file: {results_file}")
 
         output_file = results_file.with_name(results_file.stem + "_calibrated.json")
 
-        calibrate_slide_metrics(
-            metrics_path=str(results_file),
-            calibrations_path=calibrations_json_path,
-            output_path=str(output_file)
-        )
+        try:
+            calibrate_slide_metrics(
+                metrics_path=str(results_file),
+                calibrations_path=calibrations_json_path,
+                output_path=str(output_file)
+            )
+
+        except MissingMetricsError as e:
+            print(f"SKIPPING {results_file}: {e}")
+            skipped.append(str(results_file))
+            continue
+
+        except Exception as e:
+            # Unexpected bugs should not be silently ignored
+            print(f"ERROR processing {results_file}: {e}")
+            raise
+
+    if skipped:
+        with open("skipped_missing_metrics.txt", "w") as f:
+            f.write("\n".join(skipped))
