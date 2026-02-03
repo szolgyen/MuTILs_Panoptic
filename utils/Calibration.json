@@ -1,0 +1,254 @@
+{
+    "CTA.SaliencyWtdMean_nTILsCells2AnyStromaRegionArea": {
+        "n": 304,
+        "Pearson_r": 0.4563111946784646,
+        "Pearson_pvalue": 4.856619088586949e-17,
+        "Spearman_r": 0.5568440573675123,
+        "Spearman_pvalue": 3.730575828857568e-26,
+        "n_no_extremes": 287,
+        "slope": 1360.9271240234375
+    },
+    "CTA.SaliencyWtdMean_nTILsCells2nAllStromaCells": {
+        "n": 304,
+        "Pearson_r": 0.511491117400518,
+        "Pearson_pvalue": 1.1449424534653904e-21,
+        "Spearman_r": 0.5491473146299389,
+        "Spearman_pvalue": 2.4092068335079573e-25,
+        "n_no_extremes": 288,
+        "slope": 1.8388792276382446
+    },
+    "CTA.SaliencyWtdMean_SalientTILs2StromaRatio": {
+        "n": 304,
+        "Pearson_r": 0.3328947767975846,
+        "Pearson_pvalue": 2.6668420294812717e-09,
+        "Spearman_r": 0.4531190592476904,
+        "Spearman_pvalue": 8.497517361317639e-17,
+        "n_no_extremes": 285,
+        "slope": 5.585086822509766
+    },
+    "CTA.SaliencyWtdMean_TILs2AnyStromaRatio": {
+        "n": 304,
+        "Pearson_r": 0.3321835650077174,
+        "Pearson_pvalue": 2.895696519980336e-09,
+        "Spearman_r": 0.46873732219596503,
+        "Spearman_pvalue": 5.199750074146647e-18,
+        "n_no_extremes": 285,
+        "slope": 5.956296443939209
+    },
+    "CTA.TopKHotspotSaliencyWtdMean_nTILsCells2AnyStromaRegionArea": {
+        "n": 304,
+        "Pearson_r": 0.4421981297206974,
+        "Pearson_pvalue": 5.514513921653997e-16,
+        "Spearman_r": 0.5631673515564338,
+        "Spearman_pvalue": 7.768218866476685e-27,
+        "n_no_extremes": 289,
+        "slope": 893.4478149414062
+    },
+    "CTA.TopKHotspotSaliencyWtdMean_nTILsCells2nAllStromaCells": {
+        "n": 304,
+        "Pearson_r": 0.5237552183946864,
+        "Pearson_pvalue": 8.152835073848339e-23,
+        "Spearman_r": 0.5786302314192576,
+        "Spearman_pvalue": 1.4484198416694582e-28,
+        "n_no_extremes": 291,
+        "slope": 1.2897818088531494
+    },
+    "CTA.TopKHotspotSaliencyWtdMean_SalientTILs2StromaRatio": {
+        "n": 304,
+        "Pearson_r": 0.3560665323280279,
+        "Pearson_pvalue": 1.622287714729619e-10,
+        "Spearman_r": 0.4721148030769431,
+        "Spearman_pvalue": 2.7882950297124365e-18,
+        "n_no_extremes": 286,
+        "slope": 3.9615283012390137
+    },
+    "CTA.TopKHotspotSaliencyWtdMean_TILs2AnyStromaRatio": {
+        "n": 304,
+        "Pearson_r": 0.3570328566880172,
+        "Pearson_pvalue": 1.4362671077286173e-10,
+        "Spearman_r": 0.4843096814033228,
+        "Spearman_pvalue": 2.7723509756440196e-19,
+        "n_no_extremes": 286,
+        "slope": 4.134808540344238
+    },
+    "CTA.Global_nTILsCells2AnyStromaRegionArea": {
+        "n": 304,
+        "Pearson_r": 0.3238420278293197,
+        "Pearson_pvalue": 7.487500998354844e-09,
+        "Spearman_r": 0.5832968962352797,
+        "Spearman_pvalue": 4.175544586692634e-29,
+        "n_no_extremes": 287,
+        "slope": 1247.6739501953125
+    },
+    "CTA.Global_nTILsCells2nAllStromaCells": {
+        "n": 304,
+        "Pearson_r": 0.47067026782171767,
+        "Pearson_pvalue": 3.6429932598371074e-18,
+        "Spearman_r": 0.5747840151556783,
+        "Spearman_pvalue": 3.977780703949522e-28,
+        "n_no_extremes": 290,
+        "slope": 1.1969300508499146
+    },
+    "CTA.Global_SalientTILs2StromaRatio": {
+        "n": 304,
+        "Pearson_r": 0.28513634284525013,
+        "Pearson_pvalue": 4.272580148927694e-07,
+        "Spearman_r": 0.47154714836532385,
+        "Spearman_pvalue": 3.0976719789495332e-18,
+        "n_no_extremes": 287,
+        "slope": 5.657148838043213
+    },
+    "CTA.Global_TILs2AnyStromaRatio": {
+        "n": 304,
+        "Pearson_r": 0.23809452168819653,
+        "Pearson_pvalue": 2.7323686113990224e-05,
+        "Spearman_r": 0.5035170565639384,
+        "Spearman_pvalue": 6.030728270418718e-21,
+        "n_no_extremes": 283,
+        "slope": 7.196020126342773
+    },
+    "CTA.TopKSaliencyWtdMean_nTILsCells2AnyStromaRegionArea": {
+        "n": 304,
+        "Pearson_r": 0.4577743999127241,
+        "Pearson_pvalue": 3.750718805951941e-17,
+        "Spearman_r": 0.5269480069099424,
+        "Spearman_pvalue": 4.025972855893041e-23,
+        "n_no_extremes": 287,
+        "slope": 1480.016357421875
+    },
+    "CTA.TopKSaliencyWtdMean_nTILsCells2nAllStromaCells": {
+        "n": 304,
+        "Pearson_r": 0.49695648265290393,
+        "Pearson_pvalue": 2.29102943596909e-20,
+        "Spearman_r": 0.507024705799441,
+        "Spearman_pvalue": 2.9193562378620757e-21,
+        "n_no_extremes": 286,
+        "slope": 2.012561082839966
+    },
+    "CTA.TopKSaliencyWtdMean_SalientTILs2StromaRatio": {
+        "n": 304,
+        "Pearson_r": 0.31433446865164416,
+        "Pearson_pvalue": 2.13578442739403e-08,
+        "Spearman_r": 0.42877951654626245,
+        "Spearman_pvalue": 5.01572010052187e-15,
+        "n_no_extremes": 281,
+        "slope": 6.198540687561035
+    },
+    "CTA.TopKSaliencyWtdMean_TILs2AnyStromaRatio": {
+        "n": 304,
+        "Pearson_r": 0.31832297794467,
+        "Pearson_pvalue": 1.3820352988405882e-08,
+        "Spearman_r": 0.4426017148147214,
+        "Spearman_pvalue": 5.152375045353555e-16,
+        "n_no_extremes": 282,
+        "slope": 6.523022174835205
+    },
+    "CTA.UnweightedMean_nTILsCells2AnyStromaRegionArea": {
+        "n": 304,
+        "Pearson_r": 0.3677049407334284,
+        "Pearson_pvalue": 3.6401320461924574e-11,
+        "Spearman_r": 0.5848490030056219,
+        "Spearman_pvalue": 2.748638236401287e-29,
+        "n_no_extremes": 286,
+        "slope": 1310.6201171875
+    },
+    "CTA.UnweightedMean_nTILsCells2nAllStromaCells": {
+        "n": 304,
+        "Pearson_r": 0.4878150929678606,
+        "Pearson_pvalue": 1.4034503732020227e-19,
+        "Spearman_r": 0.5725017587410816,
+        "Spearman_pvalue": 7.198863707575875e-28,
+        "n_no_extremes": 286,
+        "slope": 1.6757086515426636
+    },
+    "CTA.UnweightedMean_SalientTILs2StromaRatio": {
+        "n": 304,
+        "Pearson_r": 0.28427242567588085,
+        "Pearson_pvalue": 4.645386245442812e-07,
+        "Spearman_r": 0.4755625403876811,
+        "Spearman_pvalue": 1.4654165159079985e-18,
+        "n_no_extremes": 282,
+        "slope": 6.147589206695557
+    },
+    "CTA.UnweightedMean_TILs2AnyStromaRatio": {
+        "n": 304,
+        "Pearson_r": 0.26468048968266644,
+        "Pearson_pvalue": 2.874747266334869e-06,
+        "Spearman_r": 0.49318936138921726,
+        "Spearman_pvalue": 4.8671901564853054e-20,
+        "n_no_extremes": 283,
+        "slope": 6.841457843780518
+    },
+    "CTA.TopKSalientHotspotWtdMean_nTILsCells2AnyStromaRegionArea": {
+        "n": 304,
+        "Pearson_r": 0.41335070637973476,
+        "Pearson_pvalue": 5.642652829897655e-14,
+        "Spearman_r": 0.517333867069379,
+        "Spearman_pvalue": 3.295378453044908e-22,
+        "n_no_extremes": 285,
+        "slope": 791.4381103515625
+    },
+    "CTA.TopKSalientHotspotWtdMean_nTILsCells2nAllStromaCells": {
+        "n": 304,
+        "Pearson_r": 0.47341752597653436,
+        "Pearson_pvalue": 2.188500973358419e-18,
+        "Spearman_r": 0.5080985947242697,
+        "Spearman_pvalue": 2.3339613664220924e-21,
+        "n_no_extremes": 283,
+        "slope": 1.2062487602233887
+    },
+    "CTA.TopKSalientHotspotWtdMean_SalientTILs2StromaRatio": {
+        "n": 304,
+        "Pearson_r": 0.34509520869111443,
+        "Pearson_pvalue": 6.284257819237585e-10,
+        "Spearman_r": 0.44580829585275566,
+        "Spearman_pvalue": 2.993838200471621e-16,
+        "n_no_extremes": 279,
+        "slope": 3.5589165687561035
+    },
+    "CTA.TopKSalientHotspotWtdMean_TILs2AnyStromaRatio": {
+        "n": 304,
+        "Pearson_r": 0.35029672421359914,
+        "Pearson_pvalue": 3.3285045079543785e-10,
+        "Spearman_r": 0.4617481004979686,
+        "Spearman_pvalue": 1.8476714279412504e-17,
+        "n_no_extremes": 279,
+        "slope": 3.718209981918335
+    },
+    "CTA.HotspotWtdMean_nTILsCells2AnyStromaRegionArea": {
+        "n": 304,
+        "Pearson_r": 0.4214244115335073,
+        "Pearson_pvalue": 1.614880437530883e-14,
+        "Spearman_r": 0.539459254680763,
+        "Spearman_pvalue": 2.3565662238195404e-24,
+        "n_no_extremes": 285,
+        "slope": 722.705322265625
+    },
+    "CTA.HotspotWtdMean_nTILsCells2nAllStromaCells": {
+        "n": 304,
+        "Pearson_r": 0.4914002769859036,
+        "Pearson_pvalue": 6.938808265396529e-20,
+        "Spearman_r": 0.5515407744732355,
+        "Spearman_pvalue": 1.3558141419838086e-25,
+        "n_no_extremes": 289,
+        "slope": 1.057537317276001
+    },
+    "CTA.HotspotWtdMean_SalientTILs2StromaRatio": {
+        "n": 304,
+        "Pearson_r": 0.35788007454606074,
+        "Pearson_pvalue": 1.2903722795751252e-10,
+        "Spearman_r": 0.46204873767439575,
+        "Spearman_pvalue": 1.7506436349017288e-17,
+        "n_no_extremes": 282,
+        "slope": 3.3510329723358154
+    },
+    "CTA.HotspotWtdMean_TILs2AnyStromaRatio": {
+        "n": 304,
+        "Pearson_r": 0.35721388278591704,
+        "Pearson_pvalue": 1.4038048250682366e-10,
+        "Spearman_r": 0.47045019981477654,
+        "Spearman_pvalue": 3.794027558750769e-18,
+        "n_no_extremes": 284,
+        "slope": 3.475316286087036
+    }
+}
